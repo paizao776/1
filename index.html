@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Botânica Pura: cosméticos naturais, veganos e conscientes.">
+  <title>Botânica Pura | Beleza natural</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#inicio">🌿 Botânica Pura</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#beneficios">Nossa essência</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a class="nav-cta" href="#produtos">Conheça a linha</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <span class="etiqueta">CUIDADO QUE RESPEITA A NATUREZA</span>
+        <h1>Beleza limpa, consciente e brasileira.</h1>
+        <p>Uma rotina de cuidado mais leve, com ingredientes de origem natural e escolhas que fazem bem para você e para o planeta.</p>
+        <a class="botao botao-terra" href="#produtos">Descubra seus favoritos</a>
+        <div class="mini-info"><span>✓ Vegano</span><span>✓ Cruelty-free</span><span>✓ Feito com cuidado</span></div>
+      </div>
+      <div class="hero-foto">
+        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1000&q=85" alt="Produtos de cuidados naturais em uma composição com plantas">
+        <div class="selo">Cuidado<br>de dentro<br>para fora</div>
+      </div>
+    </section>
+
+    <section class="beneficios secao" id="beneficios">
+      <div class="titulo-secao">
+        <span class="etiqueta">NOSSA ESSÊNCIA</span>
+        <h2>Pequenas escolhas, grandes mudanças.</h2>
+        <p>Beleza e responsabilidade podem caminhar juntas.</p>
+      </div>
+      <div class="beneficio-grid">
+        <article class="beneficio"><span class="icone">🐰</span><h3>Sem testes em animais</h3><p>Nenhum dos nossos produtos é testado em animais.</p></article>
+        <article class="beneficio"><span class="icone">♻️</span><h3>Menos desperdício</h3><p>Priorizamos embalagens conscientes e escolhas mais sustentáveis.</p></article>
+        <article class="beneficio"><span class="icone">🌱</span><h3>Ativos selecionados</h3><p>Ingredientes escolhidos para cuidar da pele com delicadeza.</p></article>
+      </div>
+    </section>
+
+    <section class="produtos secao" id="produtos">
+      <div class="titulo-secao">
+        <span class="etiqueta">LINHA BOTÂNICA</span>
+        <h2>Seu ritual de cuidado começa aqui.</h2>
+        <p>Conheça três queridinhos para uma rotina simples e especial.</p>
+      </div>
+      <div class="produto-grid">
+        <article class="produto">
+          <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=85" alt="Frasco de sérum para cuidados com a pele">
+          <div class="produto-info"><span class="categoria">HIDRATAÇÃO</span><h3>Sérum Botânico</h3><p>Textura leve para deixar a pele com sensação de frescor.</p><div class="preco">R$ 79,90</div><button class="comprar" data-produto="Sérum Botânico">Adicionar ao interesse</button></div>
+        </article>
+        <article class="produto">
+          <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85" alt="Creme hidratante em embalagem minimalista">
+          <div class="produto-info"><span class="categoria">NUTRIÇÃO</span><h3>Hidratante Natural</h3><p>Um cuidado diário para deixar a pele macia e confortável.</p><div class="preco">R$ 89,90</div><button class="comprar" data-produto="Hidratante Natural">Adicionar ao interesse</button></div>
+        </article>
+        <article class="produto">
+          <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=800&q=85" alt="Frasco de tônico para rotina de cuidados">
+          <div class="produto-info"><span class="categoria">FRESCOR</span><h3>Tônico Suave</h3><p>Uma etapa refrescante para completar sua rotina de cuidado.</p><div class="preco">R$ 54,90</div><button class="comprar" data-produto="Tônico Suave">Adicionar ao interesse</button></div>
+        </article>
+      </div>
+      <p class="aviso" id="mensagem" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="depoimentos secao" id="depoimentos">
+      <div class="titulo-secao">
+        <span class="etiqueta">QUEM JÁ CONHECE</span>
+        <h2>Uma rotina com mais carinho.</h2>
+      </div>
+      <div class="depoimento-grid">
+        <blockquote>“Gostei da proposta da marca e de como os produtos se encaixaram na minha rotina.”<cite>— Marina, cliente</cite></blockquote>
+        <blockquote>“A página é linda e os produtos têm uma proposta que combina com o que procuro.”<cite>— Ana, cliente</cite></blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <a class="logo" href="#inicio">🌿 Botânica Pura</a>
+    <p>Beleza consciente, todos os dias.</p>
+    <p class="direitos">© 2026 Botânica Pura. Projeto demonstrativo.</p>
+  </footer>
+</body>
+</html>

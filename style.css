@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root{--fundo:#fdfbf7;--verde:#2d5a43;--terra:#c26d38;--borda:#e7e5e0;--texto:#28352d;--suave:#6e786f}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{font-family:'DM Sans',sans-serif;background:var(--fundo);color:var(--texto);line-height:1.6}
+img{display:block;width:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+.topo{height:76px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:rgba(253,251,247,.96);border-bottom:1px solid var(--borda);position:sticky;top:0;z-index:10}
+.logo{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;color:var(--verde)}
+.nav{display:flex;align-items:center;gap:28px;font-size:.92rem}
+.nav a:hover{color:var(--terra)}
+.nav .nav-cta{background:var(--verde);color:white;padding:11px 18px;border-radius:30px}
+.menu-btn{display:none;border:0;background:none;font-size:1.7rem;color:var(--verde);cursor:pointer}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:6%;align-items:center;padding:75px 9%;min-height:570px}
+.hero-texto{max-width:550px}
+.etiqueta{font-size:.72rem;letter-spacing:2px;font-weight:700;color:var(--terra)}
+h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.15}
+h1{font-size:clamp(2.8rem,5vw,4.6rem);color:var(--verde);margin:18px 0}
+.hero-texto>p{font-size:1.08rem;color:var(--suave);max-width:480px;margin-bottom:28px}
+.botao{display:inline-block;padding:14px 23px;border-radius:30px;font-weight:700}
+.botao-terra{background:var(--terra);color:white}
+.botao-terra:hover,.comprar:hover{filter:brightness(.93);transform:translateY(-2px)}
+.mini-info{display:flex;flex-wrap:wrap;gap:16px;margin-top:25px;font-size:.82rem;color:var(--verde)}
+.hero-foto{position:relative}
+.hero-foto img{height:430px;aspect-ratio:3/2;border-radius:180px 180px 18px 18px}
+.selo{position:absolute;right:-18px;bottom:25px;background:var(--verde);color:white;border-radius:50%;width:115px;height:115px;display:grid;place-content:center;text-align:center;font-family:'Playfair Display',serif;line-height:1.25;transform:rotate(8deg)}
+.secao{padding:80px 9%}
+.titulo-secao{text-align:center;max-width:650px;margin:0 auto 42px}
+h2{font-size:clamp(2rem,4vw,3rem);color:var(--verde);margin:12px 0}
+.titulo-secao p{color:var(--suave)}
+.beneficio-grid,.produto-grid,.depoimento-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.beneficio{padding:30px 25px;border:1px solid var(--borda);border-radius:18px;background:#fff}
+.icone{font-size:2rem}
+.beneficio h3{font-size:1.35rem;margin:13px 0 8px;color:var(--verde)}
+.beneficio p,.produto p{color:var(--suave);font-size:.93rem}
+.produtos{background:#f4f1e9}
+.produto{background:white;border-radius:16px;overflow:hidden;border:1px solid var(--borda)}
+.produto img{height:auto;aspect-ratio:3/2}
+.produto-info{padding:22px}
+.categoria{font-size:.68rem;letter-spacing:1.5px;color:var(--terra);font-weight:700}
+.produto h3{font-size:1.45rem;color:var(--verde);margin:7px 0}
+.preco{font-size:1.18rem;font-weight:700;margin:14px 0;color:var(--texto)}
+.comprar{width:100%;border:0;border-radius:25px;background:var(--verde);color:white;padding:12px;font:inherit;font-weight:700;cursor:pointer;transition:.2s}
+.aviso{text-align:center;color:var(--verde);font-weight:700;margin-top:20px;min-height:25px}
+.depoimento-grid{grid-template-columns:repeat(2,1fr)}
+blockquote{background:white;border:1px solid var(--borda);border-radius:16px;padding:28px;font-family:'Playfair Display',serif;font-size:1.15rem}
+cite{display:block;margin-top:18px;font-family:'DM Sans',sans-serif;font-size:.85rem;color:var(--terra);font-style:normal}
+.rodape{background:var(--verde);color:white;text-align:center;padding:35px 15px}
+.rodape .logo{color:white}.rodape p{margin-top:8px}.direitos{font-size:.78rem;opacity:.75}
+@media(max-width:800px){.topo{padding:0 5%}.menu-btn{display:block}.nav{display:none;position:absolute;top:76px;left:0;width:100%;padding:20px 6%;background:var(--fundo);border-bottom:1px solid var(--borda);flex-direction:column;align-items:stretch;gap:16px}.nav.aberto{display:flex}.nav .nav-cta{text-align:center}.hero{grid-template-columns:1fr;padding:55px 7%;gap:35px}.hero-foto img{height:330px}.selo{right:0}.secao{padding:65px 7%}.beneficio-grid,.produto-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.hero{padding:42px 6%}.hero-foto img{height:270px}.mini-info{gap:9px;font-size:.75rem}.beneficio-grid,.produto-grid,.depoimento-grid{grid-template-columns:1fr}.secao{padding:55px 6%}.titulo-secao{margin-bottom:30px}.produto-info{padding:20px}.selo{width:95px;height:95px;font-size:.9rem}}
+@media(max-width:340px){h1{font-size:2.45rem}.topo{height:68px}.nav{top:68px}.hero-foto img{height:230px}.botao{padding:12px 16px;font-size:.9rem}}
